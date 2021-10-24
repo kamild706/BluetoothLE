@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BleTest</string>
+    <string name="no_ble_support">No Bluetooth Low Energy support</string>
+    <string name="no_bl_adapter">No Bluetooth adapter available</string>
+    <string name="scan_failed_already_started">Fails to start scan as BLE scan with the same settings is already started by the app.</string>
+    <string name="scan_failed_application_registration_failed">Fails to start scan as app cannot be registered.</string>
+    <string name="scan_failed_feature_unsupported">Fails to start power optimized scan as this feature is not supported.</string>
+    <string name="scan_failed_internal_error">Fails to start scan due an internal error.</string>
+    <string name="ble_scanner_title">Ble Scanner</string>
+    <string name="ble_scanner_location_permission_header">Location permission</string>
+    <string name="ble_scanner_location_permission_info">Bluetooth Low Energy requires location permission in order to work correctly. The app cannot proceed without access to this permission. We won\'t obtain your location.</string>
+    <string name="ble_scanner_grant_permission">Grant permission</string>
+</resources>
