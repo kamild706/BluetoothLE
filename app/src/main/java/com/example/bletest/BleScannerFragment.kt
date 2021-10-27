@@ -106,7 +106,8 @@ class BleScannerFragment : Fragment() {
         }
 
         resultAdapter = ScannerResultAdapter {
-
+            val directions = BleScannerFragmentDirections.toDeviceDetailsFragment(it.address)
+            findNavController().navigate(directions)
         }
         binding.resultsRecyclerView.adapter = resultAdapter
     }

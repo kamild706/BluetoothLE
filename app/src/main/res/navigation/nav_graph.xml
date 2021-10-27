@@ -6,7 +6,7 @@
         android:id="@+id/mainFragment"
         android:name="com.example.bletest.MainFragment"
         android:label="main_fragment"
-        tools:layout="@layout/main_fragment" >
+        tools:layout="@layout/main_fragment">
         <action
             android:id="@+id/toBleScannerFragment"
             app:destination="@id/bleScannerFragment"
@@ -19,5 +19,18 @@
         android:id="@+id/bleScannerFragment"
         android:name="com.example.bletest.BleScannerFragment"
         android:label="ble_scanner_fragment"
-        tools:layout="@layout/ble_scanner_fragment" />
+        tools:layout="@layout/ble_scanner_fragment">
+        <action
+            android:id="@+id/toDeviceDetailsFragment"
+            app:destination="@id/deviceDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deviceDetailsFragment"
+        android:name="com.example.bletest.DeviceDetailsFragment"
+        android:label="DeviceDetailsFragment"
+        tools:layout="@layout/device_details_fragment">
+        <argument
+            android:name="deviceAddress"
+            app:argType="string" />
+    </fragment>
 </navigation>
